@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Educación Continua</title>
+<title>INCATEC | Educación Continua</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0b3c74;
+font-family: 'Poppins', sans-serif;
+background:#0d3c75;
 }
 
-header{
-text-align:center;
-padding:60px 20px;
+.hero{
+background:url('estudiantes.jpg');
+background-size:cover;
+background-position:center;
 color:white;
+text-align:center;
+padding:120px 20px;
 }
 
-header h1{
-font-size:40px;
+.hero h1{
+font-size:50px;
 }
 
-header p{
-font-size:18px;
+.hero p{
+font-size:20px;
+}
+
+.btn{
+background:#ffc107;
+padding:15px 25px;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:40px;
+padding:50px 20px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-.curso{
+.card{
 background:white;
-border-radius:10px;
-padding:25px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-.curso h3{
-color:#0b3c74;
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
 }
 
-.boton{
+.card h3{
+padding:15px;
+color:#0d3c75;
+}
+
+.card a{
+margin:15px;
 display:inline-block;
-margin-top:15px;
-padding:12px 18px;
-background:#0b3c74;
+background:#0d3c75;
 color:white;
+padding:10px 15px;
+border-radius:6px;
 text-decoration:none;
-border-radius:5px;
-font-weight:bold;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
 padding:15px 20px;
@@ -79,57 +96,66 @@ font-weight:bold;
 
 <body>
 
-<header>
+<section class="hero">
 
-<h1>Educación Continua</h1>
+<h1>INCATEC</h1>
 
-<p>Cursos y diplomados para fortalecer tus competencias profesionales</p>
+<p>Educación Continua</p>
 
-</header>
+<a href="https://wa.me/573001234567" class="btn">
+Solicitar Información
+</a>
+
+</section>
 
 <section class="container">
 
-<div class="curso">
+<div class="card">
 
-<h3>Diplomado de Excel</h3>
+<img src="excel.jpg">
 
-<p>Aprende Excel desde nivel básico hasta avanzado para análisis de datos.</p>
+<h3>Diplomado Excel</h3>
 
-<a href="brochure_excel.pdf" class="boton" target="_blank">
-Más Información
-</a>
+<a href="#">Más información</a>
 
 </div>
 
-<div class="curso">
+<div class="card">
+
+<img src="powerbi.jpg">
 
 <h3>Curso Power BI</h3>
 
-<p>Creación de dashboards profesionales y análisis de datos.</p>
-
-<a href="brochure_powerbi.pdf" class="boton" target="_blank">
-Más Información
-</a>
+<a href="#">Más información</a>
 
 </div>
 
-<div class="curso">
+<div class="card">
+
+<img src="aph.jpg">
+
+<h3>Diplomado Atención Prehospitalaria</h3>
+
+<a href="#">Más información</a>
+
+</div>
+
+<div class="card">
+
+<img src="marketing.jpg">
 
 <h3>Curso Marketing Digital</h3>
 
-<p>Estrategias de redes sociales, publicidad digital y posicionamiento.</p>
-
-<a href="brochure_marketing.pdf" class="boton">
-Más Información
-</a>
+<a href="#">Más información</a>
 
 </div>
 
 </section>
 
-<a class="whatsapp" href="https://wa.me/573001234567" target="_blank">
+<a class="whatsapp" href="https://wa.me/573001234567">
 WhatsApp
 </a>
 
 </body>
 </html>
+
